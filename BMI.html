@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="">
+    <link rel="icon" href="./icons/gym.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+         <h1>
+             BMI
+         </h1>  
+<script>
+var w= Number(prompt("Enter Your weight in KG "));
+var h = Number(prompt("Enter Your height in meter "));
+var bmi = w/(h*h);
+if ( bmi < 18 )
+{
+    alert("You are Under-weight" +bmi);
+}
+else if (bmi => 18 && bmi < 25 )
+{
+    alert("You are normal" +bmi);   
+}
+
+else 
+{
+    alert("You are over-weight" +bmi);
+}
+ 
+</script>
+
+</body>
+</html>
